@@ -1,4 +1,4 @@
-local timer = (vim.uv or vim.loop).new_timer()
+local timer = assert((vim.uv or vim.loop).new_timer())
 timer:start(
   500,
   0,
