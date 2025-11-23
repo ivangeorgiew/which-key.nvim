@@ -205,7 +205,7 @@ function M.check(state, key)
       Util.debug("continue", node.keys, tostring(state.mode), node.plugin)
       return node
     end
-  elseif key == "<Esc>" then
+  elseif vim.list_contains({ "<Esc>", "<C-C>" }, key) then
     if state.mode:xo() then
       Util.exit() -- cancel and exit if in xo mode
     end
