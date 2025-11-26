@@ -159,6 +159,7 @@ M.z = {
 
 M.nav = {
   preset = true,
+  mode = { "n", "x" },
   { "H", desc = "Home line of window (top)" },
   { "L", desc = "Last line of window" },
   { "M", desc = "Middle line of window" },
